@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	string a,b;
+	int i,j,k,c=0,l,len;
+	cin>>a>>b;
+	sort(a.begin(), a.end());
+	sort(b.begin(), b.end());
+	l=a.length();
+		for(i=0;i<l;i++)
+		{
+			if(a.at(i)!=b.at(i))
+			{
+				c=c+1;
+				break;
+			}
+		}
+		if(c==0)
+		cout<<"YES"<<endl;
+		else
+		cout<<"NO"<<endl;
+	
+
+}
+
+
